@@ -1,0 +1,282 @@
+:root {
+   --blue-background: #1e213a;
+   --blue-dark: #100e1d;
+   --just-white: #e7e7eb;
+   --grey: #a09fb1;
+   --grey-buttons: #6e707a;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+/* font-weight: de normal 500 o  bold 700*/
+html {
+   font-size: 62.5%;
+
+   font-family: "Raleway", sans-serif;
+}
+
+header {
+   width: 100%;
+   min-width: 320px;
+   height: 500px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   background-color: var(--blue-background);
+}
+
+.header--buttons-container {
+   width: 90%;
+   min-width: 288px;
+   max-width: 460px;
+   margin-top: 20px;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.search--button {
+   height: 20px;
+   padding: 15px;
+   line-height: 2px;
+   background-color: var(--grey-buttons);
+   color: var(--just-white);
+   font-weight: 500;
+   font-size: 1.4rem;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+}
+
+.header--buttons-container .location--button {
+   display: block;
+   background-color: var(--grey-buttons);
+   height: 35px;
+   width: 35px;
+   border-radius: 50px;
+   cursor: pointer;
+}
+
+.location--button span {
+   display: inline-block;
+   width: 34px;
+   height: 34px;
+   background-image: url("./assets/precision.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+header img {
+   width: 150px;
+   height: 150px;
+   align-self: center;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.header-title--container {
+   width: 80%;
+   min-width: 288px;
+   max-width: 900px;
+   align-self: center;
+}
+
+.header-clima {
+   font-size: 3rem;
+   color: grey;
+}
+.header-clima span {
+   font-size: 8.2rem;
+   color: var(--just-white);
+}
+
+.header-shower {
+   color: var(--grey);
+   font-size: 2.8rem;
+}
+
+.header-day--container {
+   margin-top: 25px;
+   display: flex;
+   justify-content: center;
+}
+.header-day-today,
+.header-day-day {
+   color: var(--grey);
+   font-size: 1.3rem;
+}
+
+.header-helsinki {
+   margin-top: 18px;
+   color: var(--grey);
+   font-size: 1.4rem;
+}
+
+/*   MAIN     */
+main {
+   width: 100%;
+   height: auto;
+   background-color: var(--blue-dark);
+}
+
+/*    CARDS     */
+
+.weather-days--cards {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   min-width: 320px;
+   height: auto;
+   padding: 20px 10px;
+}
+
+.wheather-day-detail {
+   width: 20%;
+   min-width: 131px;
+   max-width: 80px;
+   min-height: 100px;
+   margin: 15px auto;
+   padding: 15px;
+   text-align: center;
+   background-color: var(--blue-background);
+   border-radius: 5px;
+}
+
+.detail-card-title {
+   color: var(--just-white);
+   font-size: 1.8rem;
+}
+
+.wheather-day-detail .viento {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-image: url("./assets/viento.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.wheather-day-detail .caliente {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-image: url("./assets/caliente.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.wheather-day-detail .lluvia {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-image: url("./assets/nublado.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.wheather-day-detail .nublado {
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-image: url("./assets/lluvia.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.clima-container {
+   display: flex;
+   justify-content: space-around;
+}
+
+.clima-maximo {
+   font-size: 1.4rem;
+   color: var(--just-white);
+}
+
+.clima-minimo {
+   font-size: 1.3rem;
+   color: var(--grey);
+}
+
+/*    TITULO DETALLE   */
+
+.wheater-detail--title {
+   margin-left: 50px;
+   text-align: start;
+   color: var(--just-white);
+   font-size: 2.6rem;
+}
+
+/*     DETAIL    */
+
+.wheater-detail--container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   min-width: 320px;
+   height: auto;
+   padding: 20px 10px;
+}
+
+/*   DETALLE    */
+.wheater-detail {
+   width: 80%;
+   min-width: 230px;
+   max-width: 350px;
+   margin: 20px auto;
+   min-height: 100px;
+   padding: 15px;
+   text-align: center;
+   background-color: var(--blue-background);
+   border-radius: 5px;
+}
+
+.detail-wheater-title {
+   color: var(--just-white);
+   font-size: 2.2rem;
+   margin-bottom: 10px;
+}
+
+.detail-wheater-body span {
+   color: var(--just-white);
+   font-size: 8rem;
+}
+
+.detail-wheater-body {
+   color: var(--just-white);
+   font-size: 4rem;
+   margin-bottom: 10px;
+}
+
+.detail-wheater-footer {
+   color: var(--just-white);
+   font-size: 2rem;
+}
+
+.detail-wheater-footer span {
+   display: inline-block;
+   width: 200px;
+   height: 28px;
+   background-image: url("./assets/progreso.png");
+   background-position: center;
+   background-size: cover;
+   border-radius: 8px;
+}

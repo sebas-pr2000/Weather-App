@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Wheather App</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <!-- media queries -->
+      <link
+         rel="stylesheet"
+         href="./Css/Desktop.css"
+         media="(min-width:1000px)"
+      />
+   </head>
+   <body>
+      <header>
+         <div class="header--buttons-container">
+            <button class="search--button">Search for places</button>
+            <a class="location--button"><span></span></a>
+         </div>
+         <img src="./assets/Logo.png" alt="image logo" />
+         <div class="header-title--container">
+            <p class="header-clima"><span>15</span>°C</p>
+            <p class="header-shower">Shower</p>
+            <div class="header-day--container">
+               <p class="header-day-today">Today</p>
+               <p class="header-day-day">. Fri, 5 Jun</p>
+            </div>
+            <p class="header-helsinki"><span></span>Helsinki</p>
+         </div>
+      </header>
+      <main>
+         <section class="weather-days--cards">
+            <article class="wheather-day-detail">
+               <h2 class="detail-card-title">Tomorrow</h2>
+               <span class="viento"></span>
+               <div class="clima-container">
+                  <p class="clima-maximo">16°C</p>
+                  <p class="clima-minimo">11°C</p>
+               </div>
+            </article>
+            <article class="wheather-day-detail">
+               <h2 class="detail-card-title">sun, 7 Jun</h2>
+               <span class="caliente"></span>
+               <div class="clima-container">
+                  <p class="clima-maximo">22°C</p>
+                  <p class="clima-minimo">19°C</p>
+               </div>
+            </article>
+            <article class="wheather-day-detail">
+               <h2 class="detail-card-title">Mon, 8 Jun</h2>
+               <span class="lluvia"></span>
+               <div class="clima-container">
+                  <p class="clima-maximo">14°C</p>
+                  <p class="clima-minimo">12°C</p>
+               </div>
+            </article>
+            <article class="wheather-day-detail">
+               <h2 class="detail-card-title">Tue, 9 Jun</h2>
+               <span class="nublado"></span>
+               <div class="clima-container">
+                  <p class="clima-maximo">20°C</p>
+                  <p class="clima-minimo">18°C</p>
+               </div>
+            </article>
+            <article class="wheather-day-detail">
+               <h2 class="detail-card-title">Wed, 10 Jun</h2>
+               <span class="caliente"></span>
+               <div class="clima-container">
+                  <p class="clima-maximo">26°C</p>
+                  <p class="clima-minimo">21°C</p>
+               </div>
+            </article>
+         </section>
+         <h2 class="wheater-detail--title">Todays Hightlights</h2>
+         <section class="wheater-detail--container">
+            <article class="wheater-detail">
+               <p class="detail-wheater-title">wind status</p>
+               <p class="detail-wheater-body"><span>7</span>mph</p>
+               <p class="detail-wheater-footer">WSW</p>
+            </article>
+            <article class="wheater-detail">
+               <p class="detail-wheater-title">Humidity</p>
+               <p class="detail-wheater-body"><span>84</span>%</p>
+               <p class="detail-wheater-footer"><span></span></p>
+            </article>
+            <article class="wheater-detail">
+               <p class="detail-wheater-title">Visibility</p>
+               <p class="detail-wheater-body"><span>6,4</span>miles</p>
+            </article>
+            <article class="wheater-detail">
+               <p class="detail-wheater-title">Air pressure</p>
+               <p class="detail-wheater-body"><span>988</span>mb</p>
+            </article>
+         </section>
+      </main>
+   </body>
+</html>

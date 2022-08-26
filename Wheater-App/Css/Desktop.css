@@ -1,0 +1,43 @@
+body {
+   display: flex;
+}
+
+header {
+   width: 360px;
+   height: auto;
+}
+
+.header--buttons-container {
+   margin-top: 20px;
+}
+
+header img {
+   margin-top: 70px;
+}
+
+.header-title--container {
+   margin-top: 30px;
+}
+
+.header-shower {
+   margin-top: 30px;
+}
+
+.header-helsinki {
+   margin-top: 20px;
+}
+
+.wheater-detail--title {
+   margin-bottom: 0;
+}
+
+.wheater-detail--container {
+   padding: 10px;
+}
+
+.wheater-detail--container {
+   justify-content: space-around;
+}
+.wheater-detail {
+   margin: 32px 26px;
+}
